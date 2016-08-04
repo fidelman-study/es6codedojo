@@ -1,0 +1,17 @@
+babel - transpillar
+
+init npm - npm init -y
+
+init babel - npm install babel-cli babel-core babel-preset-es2015 --save-dev
+cli - command line interface - use babel in command line
+core - main module of babel
+preset-es2015 - module for es6
+--save-dev - insert to package.json
+
+CLI
+in package.json change 'test' to "build": "babel src -d dist --preset es2015"
+invoke transpiller in command line - npm run build
+for watching use -w at the end
+
+GULP
+npm install --save-dev gulp-babel babel-preset-es2015
